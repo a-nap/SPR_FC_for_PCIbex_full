@@ -7,7 +7,12 @@ Please report bugs to: `anna.pryslopska [at] gmail.com`. This is an updated vers
 
 ## Description
 
+![Phrase-by-phrase presentation](spr.gif)
+
+![Word-by-word presentation](spr-word.gif)
+
 The self-paced reading paradigm is a method used in psycholinguistics to study sentence processing. Participants read a sentence in word-by-word or phrase-by-phrase, pressing a button to reveal each segment. In this implementation, the sentence segments that were revealed, disappear as soon as the next segment is displayed. The sentence is followed by a screen which records the answers to a forced-choice comprehension question.
+Two versions of the experiment are provided: Phrase-by-phrase and word-by-word presentation.
 
 This code sets up an online psycholinguistic experiment using PCIbex, handling participant instructions, displaying reading materials, inserting comprehension questions with attention checks, and tracking accuracy.
 

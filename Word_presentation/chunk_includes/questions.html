@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participant Information Form</title>
+    <style>
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 1vw;
+            margin-bottom: 2vw;
+            border: 1px solid black;
+            border-radius: 0.5vw;
+        }
+        /*.radio-group {*/
+        /*    margin-bottom: 20px;*/
+        /*}*/
+        /*.radio-group label {*/
+        /*    display: inline-block;*/
+        /*    margin-right: 15px;*/
+        /*}*/
+        /*button {*/
+        /*    padding: 10px 20px;*/
+        /*    background-color: #4CAF50;*/
+        /*    color: white;*/
+        /*    border: none;*/
+        /*    border-radius: 4px;*/
+        /*    cursor: pointer;*/
+        /*}*/
+        /*button:hover {*/
+            /*background-color: #45a049;*/
+        /*}*/
+    </style>
+</head>
+<body>
+
+    <h2>Participant Information Form</h2>
+
+    <form>
+        <label for="Participant ID"><b>Participant ID</b></label>
+        <input type="text" id="Participant ID" name="Participant ID" class="obligatory" />
+
+        <label for="Age"><b>Age</b></label>
+        <input type="text" id="Age" name="Age" class="obligatory" />
+
+
+<div class="radio_group_container">
+    <label class="group_label">Handedness</label>
+    <div class="radio_group">
+        <input type="radio" id="left" name="Handedness" value="left" class="obligatory">
+        <label for="left" class="label_button">left</label>
+
+        <input type="radio" id="right" name="Handedness" value="right">
+        <label for="right" class="label_button">right</label>
+
+        <input type="radio" id="ambidextrous" name="Handedness" value="ambidextrous">
+        <label for="ambidextrous" class="label_button">ambidextrous</label>
+    </div>
+</div>
+
+
+<div class="radio_group_container">
+    <label class="group_label">Gender</label>
+    <div class="radio_group">
+                <input type="radio" id="female" name="Gender" value="female" class="obligatory">
+        <label for="female" class="label_button">female</label>
+
+        <input type="radio" id="male" name="Gender" value="male">
+        <label for="male" class="label_button">male</label>
+
+        <input type="radio" id="other" name="Gender" value="other">
+        <label for="other" class="label_button">other</label>
+    </div>
+</div>
+
+<div class="radio_group_container">
+    <label class="group_label">Is English your native language?</label>
+    <div class="radio_group">
+                <input type="radio" id="yes" name="Native" value="yes" class="obligatory">
+        <label for="yes" class="label_button">yes</label>
+
+        <input type="radio" id="no" name="Native" value="no">
+        <label for="no" class="label_button">no</label>
+    </div>
+</div>
+
+        <label class="error" for="Participant ID"></label><br />
+        <label class="error" for="Age"></label><br />
+        <label class="error" for="Handedness"></label><br />
+        <label class="error" for="Gender"></label><br />
+        <label class="error" for="Native"></label><br />
+        
+    </form>
+
+</body>
+</html>

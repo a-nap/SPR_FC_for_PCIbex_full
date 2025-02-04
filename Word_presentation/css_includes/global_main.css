@@ -1,0 +1,246 @@
+
+body {
+    color:  white;
+    background-color: dimgray;
+    margin-left: 0;
+    margin-top: 5vw;
+    font-size: 1.25vw;
+}
+a {
+	color: #FED671;
+}
+
+.lindent { margin-left: 5vw; }
+
+.sending-results {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.newTextInput {
+    margin-top: 1vw;
+    margin-bottom:1vw;
+    width:900px;
+}
+
+newButton {
+    padding-top: 0.5vw;
+    margin-top: 0;
+    margin-bottom: 2vw;
+}
+
+div.bar-container {
+    border: 1px solid;
+    border-color: #9ea4b1;
+    background-color: dimgray;
+}
+div.bar {
+    background-color:  #f4ae00;
+}
+
+div.fancy {
+    color: #f4ae00;
+}
+
+p {
+    margin-top: 1vw;
+    margin-bottom: 1vw;    
+    font-size: 1.25vw;
+}
+
+p.progress-text {
+    padding-top: 0.5vw;
+    margin-top: 0;
+    margin-bottom: 2vw;
+    font-size: 1.25vw;
+    text-align: center;
+}
+p.practice-box {
+    color:  white;
+    height: 1.5vw;
+    padding-bottom: 1vw;
+    font-size: smaller;
+    text-align: center;
+}
+span.retry {
+    color:  white;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+span.retry:hover {
+    text-decoration: underline;
+}
+span.retry:visited {
+    color:  white;
+}
+
+
+.PennController-Scale .option {
+    margin: 0vw 0.5vw;
+}
+
+
+/* PennController Button Style */
+
+.PennController-Button {
+    background-color: #E4782B;
+    border-radius: 1vw;
+    /*width: 15vw;*/
+    /*height: 3vw;*/
+    border: 2vw;
+    font-size: 1.25vw;
+    padding: 1vw;
+}
+
+.PennController-Button .option label {
+    display: flex;
+    padding: 1vw;
+}
+
+.PennController-Button:hover {
+    color: black;
+    background-color: white;
+    transition: 0.1s;
+}
+
+.PennController-Button:disabled,
+    button[disabled] {
+        background-color: black;
+        color: white;
+        cursor: not-allowed;
+    }
+
+
+/* Checkbox style  */
+.switch_box{
+    display: flex;
+    /*max-width: 25vw;*/
+    min-width: 15vw;
+    height: 4vw;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.25vw;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-flex: 1;
+            flex: 1;
+}
+
+.box{
+    background: white;
+}
+
+input[type="checkbox"].switch_1{
+    font-size: 1.25vw;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    width: 3vw;
+    height: 1.5vw;
+    background: black;
+    border-radius: 2vw;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    margin-right: 0.5vw;
+  }
+  
+  input[type="checkbox"].switch_1:checked{
+    background: #E4782B;
+  }
+  
+  input[type="checkbox"].switch_1:after{
+    position: absolute;
+    content: "";
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 50%;
+    background: white;
+    -webkit-box-shadow: 0 0 .25vw rgba(0,0,0,.3);
+            box-shadow: 0 0 .25vw rgba(0,0,0,.3);
+    -webkit-transform: scale(.7);
+            transform: scale(.7);
+    left: 0;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    margin-right: 0.5vw;
+  }
+  
+  input[type="checkbox"].switch_1:checked:after{
+    left: calc(100% - 1.5vw);
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Style for the container label */
+.group_label {
+    font-weight: bold;
+    margin-bottom: 0.5vw;
+    margin-top: 1vw;
+    display: flex;
+    text-align: left;
+}
+
+/* Style for the radio group (already defined earlier) */
+.radio_group {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    gap: 0vw;
+}
+
+/* Hide the native radio button */
+input[type="radio"] {
+    display: none;
+}
+
+/* Style for the button labels */
+.label_button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5vw 2vw;
+    font-size: 1.25vw;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 0vw;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for the buttons */
+.label_button:hover {
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: black;
+}
+
+/* Active state for selected radio button */
+input[type="radio"]:checked + .label_button {
+    background-color: #f4ae00;
+    color: white;
+    border-color: #f4ae00;
+}
+
+
+input[type="text"], input[type="number"] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1vw;
+    margin-bottom: 2vw;
+    border: 1px solid #9ea4b1;
+    border-radius: 1vw;
+}

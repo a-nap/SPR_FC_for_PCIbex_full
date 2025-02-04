@@ -1,0 +1,45 @@
+.sentence {
+  background-color: dimgray;
+  clear: both;
+  color: white;
+  font-family: monospace;
+}
+.question {
+  padding-left: 0.6vw;
+}
+.rating {
+ padding-left: 0.6vw;
+}
+.sentence {
+ line-height: 400%;
+}
+.ospan {
+  border-bottom: 1px solid white;
+  background-color: dimgray;
+}
+.ispan {
+  visibility: hidden;
+}
+.practice-text {
+ color: white; 
+ font-weight: bold;
+}
+.iphone-next {
+ clear: both;
+ background: white;
+ color: gray;
+ foreground: gray;
+ text-align: center;
+ display: table;
+ font-size: 1.5vw;
+ padding-top: 1vw;
+ padding-bottom: 1vw;
+ padding-left: 2vw;
+ padding-right: 2vw;
+ margin-left: auto;
+ margin-right: auto;
+ cursor: pointer;
+ font-family: monospace;
+ font-weight: bold;
+ -webkit-border-radius: 5px;
+}
